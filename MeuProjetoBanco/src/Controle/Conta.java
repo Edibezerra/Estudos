@@ -53,10 +53,10 @@ public class Conta {
 
 	@Override
 	public String toString() {
-		String rpta = "Conta [nroConta=" + nroConta + ", saldo=" + saldo + ", dataAbertura=" + dataAbertura + ", correntistas="
-				+ Arrays.toString(correntistas) + "]";
+		String rpta = "Conta [nroConta = " + nroConta + ", saldo = " + saldo + ", dataAbertura = " + dataAbertura + ", correntistas = "
+				+ Arrays.toString(correntistas) + "";
 		for (int i = 0; i < correntistas.length; i++) {
-			rpta = rpta +" " + correntistas[i];			
+			rpta = rpta +" " + correntistas[i];   		
 		}
 		return rpta;
 	}
