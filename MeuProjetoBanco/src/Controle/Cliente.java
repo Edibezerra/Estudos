@@ -1,12 +1,11 @@
 package Controle;
 
-public class Correntista {
+public class Cliente {
 	
 	private String cpf;
 	private String nome;
 	
-	public Correntista(String cpf, String nome) {
-		super();
+	public Cliente(String cpf, String nome) {		
 		this.cpf = cpf;
 		this.nome = nome;
 	}
@@ -29,7 +28,7 @@ public class Correntista {
 
 	@Override
 	public String toString() {
-		return "Correntista [cpf=" + cpf + ", nome=" + nome + "]";
+		return "Clientes [Cpf = " + cpf + ", Nome = " + nome + "]";
 	}
 	
 	

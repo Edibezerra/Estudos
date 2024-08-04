@@ -9,14 +9,14 @@ public class Conta {
 	private int nroConta;
 	private double saldo;
 	private Data dataAbertura;
-	private Correntista[] correntistas;
+	private Cliente[] clientes;
 
-	public Conta(int nroConta, double saldo, Data dataAbertura, Correntista[] correntistas) {
+	public Conta(int nroConta, double saldo, Data dataAbertura, Cliente[] clientes) {
 
 		this.nroConta = nroConta;
 		this.saldo = saldo;
 		this.dataAbertura = dataAbertura;
-		this.correntistas = correntistas;
+		this.clientes = clientes;
 	}
 
 	public int getNroConta() {
@@ -53,10 +53,11 @@ public class Conta {
 
 	@Override
 	public String toString() {
-		String rpta = "Conta [nroConta = " + nroConta + ", saldo = " + saldo + ", dataAbertura = " + dataAbertura + ", correntistas = "
-				+ Arrays.toString(correntistas) + "";
-		for (int i = 0; i < correntistas.length; i++) {
-			rpta = rpta +" " + correntistas[i];   		
+		String rpta = "nroConta = " + nroConta + ", saldo = " + saldo + ", "+ dataAbertura + ", "
+		+ Arrays.toString(clientes) + "";
+		for (int i = 0; i < clientes.length; i++) {
+	//		rpta = rpta + clientes[i];
+			  		
 		}
 		return rpta;
 	}
