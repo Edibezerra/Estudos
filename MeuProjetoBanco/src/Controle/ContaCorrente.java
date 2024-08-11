@@ -10,9 +10,9 @@ public class ContaCorrente extends Conta {
         super(nroConta, saldo, dataAbertura, clientes);
         this.taxaMovimentação = taxaMovimentação;
     }
-    public void fazerDeposito(doublee valor){
+    public boolean fazerDeposito(double valor){
         System.out.println("Será cobrado uma taxa de: " + taxaMovimentação);
-        super.fazerDeposito(valor - taxaMovimentação);
+        return super.fazerDeposito(valor - taxaMovimentação);
     }
 
     public boolean fazerSaque(double valor){
