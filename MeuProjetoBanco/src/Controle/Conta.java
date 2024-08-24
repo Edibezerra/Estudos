@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import Utilidades.Data;
 
-public class Conta {
+public abstract class Conta {
 
 	private int nroConta;
 	private double saldo;
