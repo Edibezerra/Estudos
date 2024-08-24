@@ -17,7 +17,7 @@ public class ContaCorrente extends Conta {
 
     public boolean fazerSaque(double valor){
         System.out.println("Será cobrado uma taxa de: " + taxaMovimentação + " " + "caso exista saldo suficiente");
-        return super.fazerSaque( valor + taxaMovimentação);
+        return super.fazerSaque( valor - taxaMovimentação);
     }
 
 }
