@@ -90,5 +90,8 @@ public abstract class Conta {
 		}
 
 	}
+	public final double consultarSaldo() {
+		return saldo;
+	}
 
 }
