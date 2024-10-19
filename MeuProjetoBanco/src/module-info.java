@@ -1,9 +1,3 @@
-/**
- * 
- */
-/**
- * @author edi
- *
- */
+
 module MeuProjetoBanco {
 }

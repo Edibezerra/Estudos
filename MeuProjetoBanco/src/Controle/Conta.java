@@ -39,16 +39,18 @@ public abstract class Conta {
 		return dataAbertura;
 	}
 
+	
+
+	public Cliente[] getClientes() {
+		return clientes;
+	}
+
+	public void setClientes(Cliente[] clientes) {
+		this.clientes = clientes;
+	}
+
 	public void setDataAbertura(Data dataAbertura) {
 		this.dataAbertura = dataAbertura;
-	}
-
-	public Correntista[] getCorrentistas() {
-		return correntistas;
-	}
-
-	public void setCorrentistas(Correntista[] correntistas) {
-		this.correntistas = correntistas;
 	}
 
 	@Override
